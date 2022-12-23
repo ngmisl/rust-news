@@ -17,9 +17,13 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let client = Client::new();
 
     // Query the JSON data via the URL
-    let response = client.get("https://example.com/data.json").send()?.text()?;
+    let response = client
+        .get("https://raw.githubusercontent.com/ngmisl/rust-news/main/news.json")
+        .send()?
+        .text()?;
 
-    let news_system: NewsSystem = serde_json::from_str(data)?;
+    // Deserialize the JSON data into a Data struct;
+    let news_system: NewsSystem = serde_json::from_str(&response)?;
 
     // You can now access the data in the NewsSystem struct
     println!("{:?}", news_system);

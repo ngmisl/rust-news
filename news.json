@@ -1,18 +1,19 @@
-[
-    {
-      "title": "First news item",
-      "author": "Jane Doe",
-      "date": "2022-01-01"
-    },
-    {
-      "title": "Second news item",
-      "author": "John Doe",
-      "date": "2022-01-02"
-    },
-    {
-      "title": "Third news item",
-      "author": "Jane Doe",
-      "date": "2022-01-03"
-    }
-  ]
-  
+{
+    "items": [
+        {
+            "title": "First news item",
+            "author": "Jane Doe",
+            "date": "2022-01-01"
+        },
+        {
+            "title": "Second news item",
+            "author": "John Doe",
+            "date": "2022-01-02"
+        },
+        {
+            "title": "Third news item",
+            "author": "Jane Doe",
+            "date": "2022-01-03"
+        }
+    ]
+}
