@@ -26,7 +26,9 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let news_system: NewsSystem = serde_json::from_str(&response)?;
 
     // You can now access the data in the NewsSystem struct
-    println!("{:?}", news_system);
+    for item in &news_system.items {
+        println!("{}", item.title);
+    }
 
     Ok(())
 }
