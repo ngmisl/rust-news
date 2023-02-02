@@ -1,19 +1,8 @@
 {
-    "items": [
-        {
-            "title": "First news item",
-            "author": "Jane Doe",
-            "date": "2022-01-01"
-        },
-        {
-            "title": "Second news item",
-            "author": "John Doe",
-            "date": "2022-01-02"
-        },
-        {
-            "title": "Third news item",
-            "author": "Jane Doe",
-            "date": "2022-01-03"
-        }
-    ]
+    "date1": "01-02-2023",
+    "newstext1": "Updated The Game!",
+    "date2": "02-02-2023",
+    "newstext2": "Updated The Game!",
+    "date3": "03-02-2023",
+    "newstext3": "Updated The Game!"
 }
