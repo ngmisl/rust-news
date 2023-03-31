@@ -16,7 +16,7 @@ public class NewsManager : MonoBehaviour
    private IEnumerator GetNews()
    {
        // Set up the request to the JSON URL
-       string url = "https://raw.githubusercontent.com/ngmisl/rust-news/main/news.json";
+       string url = "https://raw.githubusercontent.com/ngmisl/mwgnews/main/news.json";
        var request = WebRequest.Create(url);
        request.Method = "GET";
        request.ContentType = "application/json";
@@ -34,7 +34,7 @@ public class NewsManager : MonoBehaviour
            newsText.text = "";
            foreach (NewsItem item in news.items)
            {
-               newsText.text += item.title + " by " + item.author + "\n";
+               newsText.text += item.date + "\n" + item.title;
            }
        }
     Debug.Log(newsText.text);
